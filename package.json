@@ -1,0 +1,23 @@
+{
+  "name": "word-memory",
+  "version": "1.0.0",
+  "description": "英语单词记忆软件",
+  "build": {
+    "appId": "com.wordmemory.app",
+    "productName": "单词记忆",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "language": "2052",
+      "unicode": true
+    },
+    "electronVersion": "42.4.0",
+    "electronDist": "./release/word-memory"
+  }
+}

@@ -1,0 +1,46 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Build output
+dist/
+installer/
+.installer/
+
+# Electron runtime (too large for git)
+release/word-memory/electron.exe
+release/word-memory/*.dll
+release/word-memory/*.pak
+release/word-memory/*.bin
+release/word-memory/locales/
+release/word-memory/resources.pak
+release/word-memory/snapshot_blob.bin
+release/word-memory/v8_context_snapshot.bin
+release/word-memory/vk_swiftshader.dll
+release/word-memory/vk_swiftshader_icd.json
+release/word-memory/vulkan-1.dll
+release/word-memory/LICENSE
+release/word-memory/LICENSES.chromium.html
+release/word-memory/version
+release/word-memory/ffmpeg.dll
+release/word-memory/icudtl.dat
+release/word-memory/libEGL.dll
+release/word-memory/libGLESv2.dll
+release/word-memory/d3dcompiler_47.dll
+release/word-memory/dxcompiler.dll
+release/word-memory/dxil.dll
+
+# Unpacked temp
+release/win-unpacked.tmp/
+
+# Electron source maps (dev only)
+*.js.map
+
+# Electron shortcuts & extras
+release/word-memory/electron.exe.lnk
+release/word-memory/resources/elevate.exe
+release/word-memory/resources/default_app.asar
+
+# OS
+.DS_Store
+Thumbs.db
