@@ -1,0 +1,40 @@
+{
+  "name": "word-memory-build",
+  "version": "1.1.0",
+  "private": true,
+  "description": "单词记忆 - 构建配置",
+  "author": "Word Memory",
+  "scripts": {
+    "build": "electron-builder --prepackaged ."
+  },
+  "build": {
+    "appId": "com.wordmemory.app",
+    "productName": "单词记忆",
+    "electronVersion": "42.4.0",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "单词记忆",
+      "unicode": true,
+      "language": "2052"
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "^25.1.8"
+  }
+}

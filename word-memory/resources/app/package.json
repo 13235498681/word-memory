@@ -1,0 +1,35 @@
+{
+  "name": "word-memory",
+  "version": "1.1.0",
+  "main": "main.cjs",
+  "description": "英语单词记忆软件",
+  "author": "Word Memory",
+  "license": "MIT",
+  "build": {
+    "appId": "com.wordmemory.app",
+    "productName": "单词记忆",
+    "electronVersion": "42.4.0",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "单词记忆",
+      "unicode": true,
+      "language": "2052"
+    }
+  }
+}
